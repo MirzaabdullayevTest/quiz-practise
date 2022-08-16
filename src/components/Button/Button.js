@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Button.module.css'
 
-export const Buttun = (props) => {
+export const Button = (props) => {
     const cls = [classes.Button]
 
     if (props.type) {

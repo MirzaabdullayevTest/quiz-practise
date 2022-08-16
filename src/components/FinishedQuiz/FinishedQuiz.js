@@ -1,5 +1,5 @@
 import React from 'react'
-import { Buttun } from '../Button/Buttun'
+import { Button } from '../Button/Button'
 import classes from './FinishedQuiz.module.css'
 import { Link } from 'react-router-dom'
 
@@ -29,10 +29,12 @@ export const FinishedQuiz = (props) => {
             </ul>
             <p>{total} currect in {props.quiz.length} questions</p>
             <div>
-                <Buttun type='primary' onRetry={props.onRetry}>Retry</Buttun>
-                <Buttun type='success'>
-                    <Link to='/quiz'>Quiz list</Link>
-                </Buttun>
+                <Button type='primary' onRetry={props.onRetry}>Retry</Button>
+                <Link to='/quiz'>
+                    <Button type='success'>
+                        Quiz list
+                    </Button>
+                </Link>
             </div>
         </div>
     )
