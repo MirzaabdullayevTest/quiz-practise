@@ -16,7 +16,7 @@ const Input = (props) => {
     return (
         <div className={cls.join(' ')}>
             <label htmlFor={htmlFor}>{props.label}</label>
-            <input type={props.type} id={htmlFor} onChange={props.onChange} />
+            <input type={props.type || 'text'} id={htmlFor} onChange={props.onChange} />
             {
                 isValid(props)
                     ? <span>{props.errorMsg}</span>

@@ -8,6 +8,6 @@ export const Button = (props) => {
         cls.push(classes[props.type])
     }
     return (
-        <button className={cls.join(' ')} onClick={props.onRetry}>{props.children}</button>
+        <button className={cls.join(' ')} onClick={props.onClick}>{props.children}</button>
     )
 }

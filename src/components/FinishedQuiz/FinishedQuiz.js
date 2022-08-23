@@ -29,7 +29,7 @@ export const FinishedQuiz = (props) => {
             </ul>
             <p>{total} currect in {props.quiz.length} questions</p>
             <div>
-                <Button type='primary' onRetry={props.onRetry}>Retry</Button>
+                <Button type='primary' onClick={props.onRetry}>Retry</Button>
                 <Link to='/quiz'>
                     <Button type='success'>
                         Quiz list

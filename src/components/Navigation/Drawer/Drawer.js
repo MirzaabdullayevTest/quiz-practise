@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Links = [
     { text: 'Auth', to: '/auth' },
-    { text: 'Home', to: '/' },
+    { text: 'QuizCreator', to: '/' },
     { text: 'Quiz list', to: '/quiz' },
 ]
 
